@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/scripts.js" defer></script>
+    <title>My Personal Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Muskan</h1>
+        <nav>
+            <ul>
+                <a href='#aboutMeContainer'>
+                    <li>About</li>
+                </a>
+                <a href='#projectsContainer'>
+                    <li>Projects</li>
+                </a>
+                <a href='#contactContainer'>
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="aboutMeContainer" >
+            <h2>About Me</h2>
+            <div id="aboutMe">
+            </div>
+
+        </section>
+        <section id="projectsContainer">
+            <h2>Projects</h2>
+            <div id="projectSection">
+
+                <sidebar id="projectList">
+                </sidebar>
+                <div id="projectNavArrows">
+                    <span class="arrow-left"></span>
+                    <span class="arrow-right"></span>
+                </div>
+
+                <div id="projectSpotlight">
+                    <div id="spotlightTitles">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contactContainer">
+            <h2>Contact Me</h2>
+            <p>Send me your email address and a message and I'll get back to you as soon as possible.</p>
+            <form id="formSection">
+                <div class='formField'>
+
+                    <label for='contactEmail'>Your email address:</label>
+                    <input id='contactEmail' name='contactEmail' type="text" />
+                    <div id="emailError"></div>
+
+                </div>
+                <div class='formField'>
+ 
+                    <label for='contactMessage'>Your message:</label>
+                    <div>
+                        <div id="charactersLeft">Characters: 0/300</div>
+                        <textarea id='contactMessage' name="contactMessage" rows="5"></textarea>
+                        <div id="messageError"></div>
+
+                    </div>
+                </div>
+                <button id='formsubmit' type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
